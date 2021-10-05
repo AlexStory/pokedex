@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Svelte Kit Pokedex</title>
+
+		
+
+		<link rel="modulepreload" href="/pokedex/app_/start-cc86cf30.js">
+		<link rel="modulepreload" href="/pokedex/app_/chunks/vendor-2dcdf98e.js">
+		<link rel="modulepreload" href="/pokedex/app_/pages/__layout.svelte-f93c45f9.js">
+		<link rel="modulepreload" href="/pokedex/app_/pages/index.svelte-7164f2b7.js">
+		<link rel="stylesheet" href="/pokedex/app_/assets/start-d5b4de3e.css">
+		<link rel="stylesheet" href="/pokedex/app_/assets/pages/__layout.svelte-dc53e54a.css">
+
+		<script type="module">
+			import { start } from "/pokedex/app_/start-cc86cf30.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"/pokedex","assets":""},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/pokedex/app_/pages/__layout.svelte-f93c45f9.js"),
+						import("/pokedex/app_/pages/index.svelte-7164f2b7.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<nav class="flex justify-center w-full"><a class="mx-4 text-lg" href="/">Home</a>
+    <a class="mx-4 text-lg" href="/about">About</a></nav>
+<div class="p-8 max-w-6xl mx-auto">
+
+<h1 class="text-4xl text-center my-8 uppercase py-4">Svelte Pokedex</h1>
+
+<input class="w-full rounded-md text-lg p-4 border-2 border-gray-200" type="text" placeholder="search" value="">
+
+<div class="grid gap-4 md:grid-cols-2 grid-cols-1 py-4"></div>
+</div>
+
+
+
+			
+		</div>
+	</body>
+</html>
