@@ -6,14 +6,10 @@ const config = {
 		// hydrate the <div id="svelte"> element in src/app.html
 		target: '#svelte',
 		adapter: adapter({
-			pages: 'docs',
-			assets: 'docs',
+			pages: 'build',
+			assets: 'build',
 			fallback: null
 		}),
-		paths: {
-			base: '/pokedex',
-		},
-		appDir: 'app_'
 	}
 };
 
